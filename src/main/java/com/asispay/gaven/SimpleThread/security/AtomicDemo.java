@@ -2,7 +2,7 @@ package com.asispay.gaven.SimpleThread.security;
 
 public class AtomicDemo{
 
-    private static  int count=0;
+    private static volatile   int count=0;
 
     //原子性问题
     public static void inc(){
