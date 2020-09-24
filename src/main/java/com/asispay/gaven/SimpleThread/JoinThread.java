@@ -30,7 +30,7 @@ public class JoinThread extends  Thread {
         joinThread.start();
 
         try {
-            joinThread.join();// 调用join()方法合并线程，将子线程mythread合并到主线程里面,,实际上是调用了wati(),释放锁
+            joinThread.join();// 调用join()方法合并线程，将子线程thread1合并到主线程里面,,实际上是调用了wati(),(主线程？)释放锁
             // 合并线程后，程序的执行的过程就相当于是方法的调用的执行过程
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -1,7 +1,6 @@
 package com.asispay.gaven.juc;
 
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class SemaphoreDemo {
 

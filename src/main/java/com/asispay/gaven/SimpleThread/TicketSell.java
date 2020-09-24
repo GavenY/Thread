@@ -16,10 +16,8 @@ public class TicketSell  implements Runnable{
                 System.out.println(Thread.currentThread().getName()+"售出一张票，还剩"+ticket);
 
                 if(ticket==0 || ticket<0){
-
                     break;
                 }
-
         }
 
 

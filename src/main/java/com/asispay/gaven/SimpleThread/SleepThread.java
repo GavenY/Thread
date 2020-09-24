@@ -41,13 +41,13 @@ public class SleepThread extends  Thread {
         SleepThread sleepThread = new SleepThread().setLock(o);
         sleepThread.setName("线程一");
 
-        SleepThread sleepThread2 = new SleepThread().setLock("");//不会释放锁
+        SleepThread sleepThread2 = new SleepThread().setLock(o);// 同一个对象o不会释放锁
         sleepThread2.setName("线程二");
         sleepThread.start();
         sleepThread2.start();
 
         try {
-            Thread.sleep(50000);
+            Thread.sleep(5000);
         }catch (InterruptedException e){
             return;
         }

@@ -7,7 +7,7 @@ public class CakeTest {
 
 
         Object lock = new Object();
-        Object lock2 = new Object();
+        //Object lock2 = new Object();
 
         CakeHome cakeHome = new CakeHome(lock);
         cakeHome.start();

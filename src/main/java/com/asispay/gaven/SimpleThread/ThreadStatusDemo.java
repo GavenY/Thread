@@ -34,6 +34,7 @@ public class ThreadStatusDemo {
     }
 
     static class BlockDemo extends Thread{
+        @Override
         public void run(){
             synchronized (BlockDemo.class){
                 while(true){
